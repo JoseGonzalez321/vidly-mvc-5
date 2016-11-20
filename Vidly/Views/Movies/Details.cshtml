@@ -9,7 +9,7 @@
 
 @if (!string.IsNullOrWhiteSpace(Model.CoverUrl))
 {
-    <img src="@Url.Content(Model.CoverUrl)" alt="@Model.Name"/>
+    <img width="200" height="300" src="@Url.Content(Model.CoverUrl)" alt="@Model.Name"/>
 }
 else
 {

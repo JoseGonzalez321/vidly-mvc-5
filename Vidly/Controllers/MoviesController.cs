@@ -69,6 +69,9 @@ namespace Vidly.Controllers
                 movieInDb.ReleaseDate = movie.ReleaseDate;
                 movieInDb.GenreId = movie.GenreId;
                 movieInDb.NumberInStock = movie.NumberInStock;
+
+                if (!string.IsNullOrWhiteSpace(movie.CoverUrl))
+                    movieInDb.CoverUrl = movie.CoverUrl;
             }
 
             _context.SaveChanges();
