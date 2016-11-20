@@ -24,9 +24,11 @@ namespace Vidly.Models
         public DateTime ReleaseDate { get; set; }
 
         [Required]
+        [Range(1, 20)]
         [Display (Name = "Number in Stock")]
         public byte NumberInStock { get; set; }
 
+        [Url]
         public string CoverUrl { get; set; }
     }
 }
