@@ -18,6 +18,8 @@ namespace Vidly.Dtos
         [Required]
         public byte GenreId { get; set; }
 
+        public GenreDto Genre { get; set; }
+
         public DateTime DateAdded { get; set; }
 
         [Required]
@@ -26,8 +28,7 @@ namespace Vidly.Dtos
         [Required]
         [Range(1, 20)]
         public byte NumberInStock { get; set; }
-
-        [Url]
+        
         public string CoverUrl { get; set; }
     }
 }

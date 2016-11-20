@@ -27,8 +27,7 @@ namespace Vidly.Models
         [Range(1, 20)]
         [Display (Name = "Number in Stock")]
         public byte NumberInStock { get; set; }
-
-        [Url]
+        
         public string CoverUrl { get; set; }
     }
 }
